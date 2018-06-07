@@ -4,17 +4,6 @@ package binary.tree;
 import java.util.ArrayList;
 import java.util.List;
 
-class Node {
-    int value;
-    Node left;
-    Node right;
-
-    public Node(int value, Node left, Node right) {
-        this.value = value;
-        this.left = left;
-        this.right = right;
-    }
-}
 /**
  * 按深度打印二叉树节点数据
  *                                 ①
