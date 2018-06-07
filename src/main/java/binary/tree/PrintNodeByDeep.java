@@ -30,10 +30,14 @@ class Node {
 public class PrintNodeByDeep {
     public static void main(String[] args) {
         // leaf node
-        Node node4 = new Node(4, new Node(10, null, null), new Node(11, null ,null));
-        Node node5 = new Node(5, new Node(99, null, null), new Node(102, null ,null));
-        Node node6 = new Node(6, new Node(150, null, null), new Node(200, null ,null));
-        Node node7 = new Node(7, new Node(555, null, null), new Node(999, null ,null));
+//        Node node4 = new Node(4, new Node(10, null, null), new Node(11, null ,null));
+//        Node node5 = new Node(5, new Node(99, null, null), new Node(102, null ,null));
+//        Node node6 = new Node(6, new Node(150, null, null), new Node(200, null ,null));
+//        Node node7 = new Node(7, new Node(555, null, null), new Node(999, null ,null));
+        Node node4 = new Node(4, null ,null);
+        Node node5 = new Node(5, null ,null);
+        Node node6 = new Node(6, null ,null);
+        Node node7 = new Node(7, null ,null);
 
         // node 2 and node 3
         Node node2 = new Node(2, node4, node5);
@@ -49,9 +53,9 @@ public class PrintNodeByDeep {
     private static void printNode(List<Node> nodes) {
         List<Node> listT = new ArrayList<>();
         for (Node node : nodes) {
-            if(node == null) {
-                continue;
-            }
+//            if(node == null) {
+//                continue;
+//            }
             System.out.print(node.value + ",");
             if (node.left != null) {
                 listT.add(node.left);
