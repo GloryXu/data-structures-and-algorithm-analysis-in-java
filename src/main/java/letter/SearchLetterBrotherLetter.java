@@ -27,10 +27,10 @@ public class SearchLetterBrotherLetter {
 
             String key = letterSorted.toString();
             String value = letter.toString();
-            if (i == count - 1) {
-                key = "abd";
-                value = "dba";
-            }
+//            if (i == count - 1) {// 为了测试而加的代码，真实使用场景下可直接删除
+//                key = "abd";
+//                value = "dba";
+//            }
             List<String> listT = dictionary.get(key);
             if (listT == null) {
                 listT = new ArrayList<>();
